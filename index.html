@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Infinite Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="top-bar">
+        <h1 class="title">Infinite Tic-Tac-Toe</h1>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          Light mode
+        </button>
+      </div>
+      <section class="board-card" aria-label="Tic-tac-toe board">
+        <div class="grid">
+          <button class="cell" data-cell="0" aria-label="Cell 1"></button>
+          <button class="cell" data-cell="1" aria-label="Cell 2"></button>
+          <button class="cell" data-cell="2" aria-label="Cell 3"></button>
+          <button class="cell" data-cell="3" aria-label="Cell 4"></button>
+          <button class="cell" data-cell="4" aria-label="Cell 5"></button>
+          <button class="cell" data-cell="5" aria-label="Cell 6"></button>
+          <button class="cell" data-cell="6" aria-label="Cell 7"></button>
+          <button class="cell" data-cell="7" aria-label="Cell 8"></button>
+          <button class="cell" data-cell="8" aria-label="Cell 9"></button>
+        </div>
+      </section>
+      <section class="controls">
+        <p id="turn" class="turn" aria-live="polite">Player 1 (X) turn</p>
+        <p id="status" class="status" aria-live="polite"></p>
+        <div class="note-row">
+          <p class="note">Each player can only keep three marks at a time.</p>
+          <p id="warning" class="warning" aria-live="polite"></p>
+        </div>
+        <button id="reset" class="reset" type="button">Reset</button>
+      </section>
+    </main>
+    <div id="celebration" class="celebration" aria-hidden="true"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
